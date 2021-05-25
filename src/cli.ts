@@ -11,7 +11,7 @@ async function performInstall() {
 			`executing prepare script in workspace ${p}`
 		);
 		await exec_p(
-			`npm run --workspace="${p}" prepare --if-exists`,
+			`npm run --workspace="${p}" prepare --if-present`,
 			{
 				NPM_CONFIG_COLOR: 'always',
 			},
