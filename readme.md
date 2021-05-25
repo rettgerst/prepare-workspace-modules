@@ -8,7 +8,7 @@ you have a monorepo using npm v7+ workspaces, and some of your modules are writt
 
 npm v7 [currently has a bug](https://github.com/npm/cli/issues/1965) which results in lifecycle scripts not executing in packages.
 
-this means that if one of your packages' exports does not exist until after the prepare script is run, other packages will bot be able to consume that package until you manually cd into the package directory and run it yourself. very annoying!
+this means that if one of your packages' exports does not exist until after the prepare script is run, other packages will not be able to consume that package until you manually cd into the package directory and run it yourself. very annoying!
 
 you also can't just run `npm run --workspaces prepare` because the command has no knowledge of the dependency graph. you must manually take into account the heirarchy of your modules.
 
@@ -16,7 +16,7 @@ you also can't just run `npm run --workspaces prepare` because the command has n
 
 run this package in the root directory.
 
-## how it works
+## how it works;
 
 this package will first inspect your root module's package.json to discover all workspaces in the project. it actually uses the same [@npmcli/map-workspaces](https://www.npmjs.com/package/@npmcli/map-workspaces) module that npm uses internally.
 
