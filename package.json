@@ -9,6 +9,10 @@
 		"test-find-npm": "ts-node src/exec_getNpmInstallLocation.ts"
 	},
 	"bin": "./bin",
+	"files": [
+		"bin",
+		"dist/*"
+	],
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
