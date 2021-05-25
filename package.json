@@ -13,8 +13,7 @@
 		"bin",
 		"dist/*"
 	],
-	"keywords": [],
-	"author": "",
+	"author": "rett gerst <tricagamma@gmail.com>",
 	"license": "ISC",
 	"devDependencies": {
 		"@aleung/fs-monkey": "^1.1.1",
