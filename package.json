@@ -14,6 +14,8 @@
 		"dist/*"
 	],
 	"author": "rett gerst <tricagamma@gmail.com>",
+	"homepage": "https://github.com/rettgerst/prepare-workspace-modules#readme",
+	"repository": "github:rettgerst/prepare-workspace-modules",
 	"license": "ISC",
 	"dependencies": {
 		"chalk": "^4.1.1",
