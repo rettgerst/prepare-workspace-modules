@@ -1,0 +1,36 @@
+{
+	"name": "prepare-workspace-modules",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"prepare": "tsc -p .",
+		"test": "jest",
+		"test-find-npm": "ts-node src/exec_getNpmInstallLocation.ts"
+	},
+	"bin": "./bin",
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@aleung/fs-monkey": "^1.1.1",
+		"@tsconfig/node10": "^1.0.7",
+		"@tsconfig/node12": "^1.0.7",
+		"@types/jest": "^26.0.23",
+		"@types/mock-fs": "^4.13.0",
+		"@types/semver": "^7.3.6",
+		"jest": "^26.6.3",
+		"mock-fs": "^5.0.0",
+		"prettier": "^2.3.0",
+		"semver": "^6.3.0",
+		"tree-crawl": "^1.1.0",
+		"ts-jest": "^26.5.6",
+		"ts-node": "^10.0.0",
+		"type-fest": "^0.21.3",
+		"typescript": "^4.2.4"
+	},
+	"dependencies": {
+		"chalk": "^4.1.1",
+		"fast-glob": "^3.2.5"
+	}
+}

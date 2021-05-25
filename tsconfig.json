@@ -1,0 +1,14 @@
+{
+	"extends": "@tsconfig/node12/tsconfig.json",
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"rootDir": "src/",
+		"outDir": "dist"
+	},
+	"include": ["src/"]
+}
