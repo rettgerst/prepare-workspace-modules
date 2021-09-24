@@ -16,7 +16,9 @@ you also can't just run `npm run --workspaces prepare` because the command has n
 
 run this package in the root directory.
 
-## how it works;
+also, if you want to run another script other than "prepare", you can provide said script as an argument. [thank you @jimmed for the PR!](https://github.com/rettgerst/prepare-workspace-modules/pull/2).
+
+## how it works:
 
 this package will first inspect your root module's package.json to discover all workspaces in the project. it actually uses the same [@npmcli/map-workspaces](https://www.npmjs.com/package/@npmcli/map-workspaces) module that npm uses internally.
 
